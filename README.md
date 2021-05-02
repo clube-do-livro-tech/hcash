@@ -4,6 +4,6 @@ Aplicação Haskell gerada com a ferramenta [Stack](https://docs.haskellstack.or
 
 # Todo list
 
-[x] Primeiro módulo (HCash.Algebra)
-[x] Teste unitário (AlgebraSpec)
-[ ] ...
+- Primeiro módulo (HCash.Algebra) [OK]
+- Teste unitário (AlgebraSpec) [OK]
+- ...
