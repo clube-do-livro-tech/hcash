@@ -19,7 +19,7 @@ spec = do
     it "square should work" $ do
       Algebra.square 4 `shouldBe` 16
   describe "HCash.Algebra - Boolean Operators" $ do
-    it "all operators should work" $ do  -- forM_ loopghci
+    it "all operators should work" $ do 
       foreach [[a, b] | a <- [False, True],
                         b <- [False, True]] $ \[a, b] -> do
         Algebra.or a b `shouldBe` a || b
