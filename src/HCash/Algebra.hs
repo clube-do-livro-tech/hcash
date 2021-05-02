@@ -30,7 +30,8 @@ not True = False
 not False = True
 
 xor :: Bool -> Bool -> Bool
-xor a b = a /= b
+xor True a = HCash.Algebra.not a
+xor False a = a
 
 nor :: Bool -> Bool -> Bool
 nor False False = True

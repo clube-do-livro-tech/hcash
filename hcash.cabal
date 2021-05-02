@@ -26,12 +26,14 @@ source-repository head
 library
   exposed-modules:
       HCash.Algebra
+      HCash.Control
   other-modules:
       Paths_hcash
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , mtl
   default-language: Haskell2010
 
 executable hcash-exe
@@ -44,6 +46,7 @@ executable hcash-exe
   build-depends:
       base >=4.7 && <5
     , hcash
+    , mtl
   default-language: Haskell2010
 
 test-suite hcash-test
@@ -59,4 +62,5 @@ test-suite hcash-test
       base >=4.7 && <5
     , hcash
     , hspec
+    , mtl
   default-language: Haskell2010
